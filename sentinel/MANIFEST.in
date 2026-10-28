@@ -1,0 +1,4 @@
+include README.md EXTENDING.md VERIFICATION.md requirements.txt
+recursive-include samples *.log
+recursive-include examples *.txt *.json *.csv
+recursive-include tests *.py

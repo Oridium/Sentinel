@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "tool": "sentinel",
+  "tool_version": "0.1.0",
+  "generated_at": "2026-10-28T00:24:13.936593Z",
+  "inputs": [
+    "samples/auth.log"
+  ],
+  "configuration": {
+    "threshold": 5,
+    "window_seconds": 300,
+    "assumed_year": 2026,
+    "assumed_timezone": "UTC"
+  },
+  "summary": {
+    "total_lines": 45,
+    "parsed_events": 39,
+    "failed_logins": 37,
+    "successful_logins": 2,
+    "ignored_lines": 6,
+    "malformed_lines": 0,
+    "first_event": "2026-10-27T09:30:00Z",
+    "last_event": "2026-10-27T11:03:10Z",
+    "alert_count": 3,
+    "alerts_by_severity": {
+      "medium": 1,
+      "high": 1,
+      "critical": 1
+    }
+  },
+  "alerts": [
+    {
+      "alert_id": "0742250cef6cb482a05f",
+      "rule": "ssh_brute_force",
+      "severity": "medium",
+      "host": "web-01",
+      "source_ip": "198.51.100.23",
+      "first_seen": "2026-10-27T10:00:00Z",
+      "last_seen": "2026-10-27T10:05:00Z",
+      "attempt_count": 5,
+      "peak_window_count": 5,
+      "threshold": 5,
+      "window_seconds": 300,
+      "usernames": [
+        "admin_demo",
+        "guest_demo"
+      ],
+      "evidence": [
+        {
+          "source": "samples/auth.log",
+          "line_number": 9
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 10
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 11
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 12
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 13
+        }
+      ],
+      "evidence_omitted": 0
+    },
+    {
+      "alert_id": "18d574c2898e8dc531b3",
+      "rule": "ssh_brute_force",
+      "severity": "high",
+      "host": "web-01",
+      "source_ip": "203.0.113.77",
+      "first_seen": "2026-10-27T10:10:00Z",
+      "last_seen": "2026-10-27T10:11:30Z",
+      "attempt_count": 10,
+      "peak_window_count": 10,
+      "threshold": 5,
+      "window_seconds": 300,
+      "usernames": [
+        "service_demo"
+      ],
+      "evidence": [
+        {
+          "source": "samples/auth.log",
+          "line_number": 15
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 16
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 17
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 18
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 19
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 20
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 21
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 22
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 23
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 24
+        }
+      ],
+      "evidence_omitted": 0
+    },
+    {
+      "alert_id": "897145811d30738dfc9c",
+      "rule": "ssh_brute_force",
+      "severity": "critical",
+      "host": "bastion-01",
+      "source_ip": "2001:db8::b",
+      "first_seen": "2026-10-27T11:00:00Z",
+      "last_seen": "2026-10-27T11:03:10Z",
+      "attempt_count": 20,
+      "peak_window_count": 20,
+      "threshold": 5,
+      "window_seconds": 300,
+      "usernames": [
+        "root_demo"
+      ],
+      "evidence": [
+        {
+          "source": "samples/auth.log",
+          "line_number": 26
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 27
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 28
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 29
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 30
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 31
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 32
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 33
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 34
+        },
+        {
+          "source": "samples/auth.log",
+          "line_number": 35
+        }
+      ],
+      "evidence_omitted": 10
+    }
+  ],
+  "diagnostics": [],
+  "diagnostics_omitted": 0
+}

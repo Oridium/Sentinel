@@ -1,0 +1,6 @@
+# Synthetic benign fixture: isolated failures and successful logins.
+Oct 27 08:00:00 web-01 sshd[1]: Failed password for operator_demo from 192.0.2.50 port 50000 ssh2
+Oct 27 08:00:10 web-01 sshd[2]: Accepted publickey for operator_demo from 192.0.2.50 port 50001 ssh2
+Oct 27 08:10:00 web-01 sshd[3]: Failed password for operator_demo from 192.0.2.50 port 50002 ssh2
+Oct 27 08:20:00 web-01 sshd[4]: Failed password for operator_demo from 192.0.2.50 port 50003 ssh2
+Oct 27 08:20:10 web-01 sshd[5]: Accepted password for operator_demo from 192.0.2.50 port 50004 ssh2

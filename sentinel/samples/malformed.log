@@ -1,0 +1,5 @@
+# Synthetic malformed records for testing diagnostics and --strict.
+Oct 27 12:00:00 web-01 sshd[1]: Failed password for demo from 999.0.0.1 port 50000 ssh2
+Feb 30 12:00:00 web-01 sshd[2]: Failed password for demo from 192.0.2.10 port 50000 ssh2
+Oct 27 12:00:00 web-01 sshd[3]: Failed password for incomplete
+Oct 27 12:00:01 web-01 sshd[4]: Failed password for demo from 192.0.2.10 port 50001 ssh2

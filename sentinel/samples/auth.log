@@ -1,0 +1,45 @@
+# Entirely synthetic fixture: no credentials, production hosts, or routable example IPs.
+# Legacy timestamps below are intended for --year 2026 --timezone UTC.
+Oct 27 09:00:00 web-01 CRON[100]: session opened for synthetic maintenance
+Oct 27 09:30:00 web-01 sshd[101]: Accepted publickey for operator_demo from 192.0.2.50 port 50000 ssh2
+Oct 27 09:40:00 web-01 sshd[102]: Failed password for operator_demo from 192.0.2.50 port 50001 ssh2
+Oct 27 09:50:00 web-01 sshd[103]: Failed password for operator_demo from 192.0.2.50 port 50002 ssh2
+Oct 27 10:00:00 web-01 sshd[200]: Invalid user admin_demo from 198.51.100.23 port 51000
+Oct 27 10:00:00 web-01 sshd[200]: pam_unix(sshd:auth): authentication failure; rhost=198.51.100.23
+Oct 27 10:00:00 web-01 sshd[200]: Failed password for invalid user admin_demo from 198.51.100.23 port 51000 ssh2
+Oct 27 10:00:30 web-01 sshd[201]: Failed password for invalid user guest_demo from 198.51.100.23 port 51001 ssh2
+Oct 27 10:01:00 web-01 sshd[202]: Failed password for invalid user admin_demo from 198.51.100.23 port 51002 ssh2
+Oct 27 10:02:00 web-01 sshd[203]: Failed password for invalid user guest_demo from 198.51.100.23 port 51003 ssh2
+Oct 27 10:05:00 web-01 sshd[204]: Failed password for invalid user admin_demo from 198.51.100.23 port 51004 ssh2
+Oct 27 10:05:01 web-01 sshd[204]: Connection closed by invalid user admin_demo 198.51.100.23 port 51004 [preauth]
+2026-10-27T10:10:00Z web-01 sshd[300]: Failed password for service_demo from 203.0.113.77 port 52000 ssh2
+2026-10-27T10:10:10Z web-01 sshd[301]: Failed password for service_demo from 203.0.113.77 port 52001 ssh2
+2026-10-27T10:10:20Z web-01 sshd[302]: Failed password for service_demo from 203.0.113.77 port 52002 ssh2
+2026-10-27T10:10:30Z web-01 sshd[303]: Failed password for service_demo from 203.0.113.77 port 52003 ssh2
+2026-10-27T10:10:40Z web-01 sshd[304]: Failed password for service_demo from 203.0.113.77 port 52004 ssh2
+2026-10-27T10:10:50Z web-01 sshd[305]: Failed password for service_demo from 203.0.113.77 port 52005 ssh2
+2026-10-27T10:11:00Z web-01 sshd[306]: Failed password for service_demo from 203.0.113.77 port 52006 ssh2
+2026-10-27T10:11:10Z web-01 sshd[307]: Failed password for service_demo from 203.0.113.77 port 52007 ssh2
+2026-10-27T10:11:20Z web-01 sshd[308]: Failed password for service_demo from 203.0.113.77 port 52008 ssh2
+2026-10-27T10:11:30Z web-01 sshd[309]: Failed password for service_demo from 203.0.113.77 port 52009 ssh2
+2026-10-27T10:30:00+00:00 web-01 sshd[350]: Accepted password for analyst_demo from 192.0.2.60 port 53000 ssh2
+2026-10-27T11:00:00Z bastion-01 sshd-session[400]: Failed publickey for root_demo from 2001:db8::b port 54000 ssh2
+2026-10-27T11:00:10Z bastion-01 sshd-session[401]: Failed publickey for root_demo from 2001:db8::b port 54001 ssh2
+2026-10-27T11:00:20Z bastion-01 sshd-session[402]: Failed publickey for root_demo from 2001:db8::b port 54002 ssh2
+2026-10-27T11:00:30Z bastion-01 sshd-session[403]: Failed publickey for root_demo from 2001:db8::b port 54003 ssh2
+2026-10-27T11:00:40Z bastion-01 sshd-session[404]: Failed publickey for root_demo from 2001:db8::b port 54004 ssh2
+2026-10-27T11:00:50Z bastion-01 sshd-session[405]: Failed publickey for root_demo from 2001:db8::b port 54005 ssh2
+2026-10-27T11:01:00Z bastion-01 sshd-session[406]: Failed publickey for root_demo from 2001:db8::b port 54006 ssh2
+2026-10-27T11:01:10Z bastion-01 sshd-session[407]: Failed publickey for root_demo from 2001:db8::b port 54007 ssh2
+2026-10-27T11:01:20Z bastion-01 sshd-session[408]: Failed publickey for root_demo from 2001:db8::b port 54008 ssh2
+2026-10-27T11:01:30Z bastion-01 sshd-session[409]: Failed publickey for root_demo from 2001:db8::b port 54009 ssh2
+2026-10-27T11:01:40Z bastion-01 sshd-session[410]: Failed publickey for root_demo from 2001:db8::b port 54010 ssh2
+2026-10-27T11:01:50Z bastion-01 sshd-session[411]: Failed publickey for root_demo from 2001:db8::b port 54011 ssh2
+2026-10-27T11:02:00Z bastion-01 sshd-session[412]: Failed publickey for root_demo from 2001:db8::b port 54012 ssh2
+2026-10-27T11:02:10Z bastion-01 sshd-session[413]: Failed publickey for root_demo from 2001:db8::b port 54013 ssh2
+2026-10-27T11:02:20Z bastion-01 sshd-session[414]: Failed publickey for root_demo from 2001:db8::b port 54014 ssh2
+2026-10-27T11:02:30Z bastion-01 sshd-session[415]: Failed publickey for root_demo from 2001:db8::b port 54015 ssh2
+2026-10-27T11:02:40Z bastion-01 sshd-session[416]: Failed publickey for root_demo from 2001:db8::b port 54016 ssh2
+2026-10-27T11:02:50Z bastion-01 sshd-session[417]: Failed publickey for root_demo from 2001:db8::b port 54017 ssh2
+2026-10-27T11:03:00Z bastion-01 sshd-session[418]: Failed publickey for root_demo from 2001:db8::b port 54018 ssh2
+2026-10-27T11:03:10Z bastion-01 sshd-session[419]: Failed publickey for root_demo from 2001:db8::b port 54019 ssh2

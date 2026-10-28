@@ -1,0 +1,20 @@
+Sentinel 0.1.0 | SSH authentication analysis
+Lines: 45 | Parsed: 39 | Ignored: 6 | Malformed: 0
+Failed logins: 37 | Successful logins: 2
+Rule: >= 5 failures in 300s per host/source IP (inclusive rolling window)
+Alerts: 3
+
+[MEDIUM] web-01 <- 198.51.100.23 | 5 failures | peak 5/300s
+  2026-10-27T10:00:00Z to 2026-10-27T10:05:00Z
+  Users: admin_demo, guest_demo
+  ID: 0742250cef6cb482a05f
+
+[HIGH] web-01 <- 203.0.113.77 | 10 failures | peak 10/300s
+  2026-10-27T10:10:00Z to 2026-10-27T10:11:30Z
+  Users: service_demo
+  ID: 18d574c2898e8dc531b3
+
+[CRITICAL] bastion-01 <- 2001:db8::b | 20 failures | peak 20/300s
+  2026-10-27T11:00:00Z to 2026-10-27T11:03:10Z
+  Users: root_demo
+  ID: 897145811d30738dfc9c
